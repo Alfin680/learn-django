@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form action="{% url "regdetails" %}" method ="POST">
+        {% csrf_token %}
+        <input type="text" name="u_name" id="" placeholder="Name"><br><br>
+        <input type="password" name="pass" id="" placeholder="Password"><br><br>
+        <input type="password" name="cpass" id="" placeholder="Confirm Password"><br><br>
+        <input type="submit" value="Register">
+
+    </form>
+</body>
+</html>
